@@ -19,11 +19,12 @@ header::after {
 /*icons social media*/
 
 .social-menu ul {
-  position: absolute;
+  position:absolute;  
   vertical-align: center;
   top: 95%;
   left: 45%;
-  right: 55%;
+  right: 55%; 
+  text-align: center;
   padding: 0;
   margin: 0;
   transform: translate(-50%, -50%);
@@ -75,6 +76,7 @@ header > div > a > img.logo {
   float: left;
   margin-left: 25px;
   width: 130px;
+  user-select: none;
 }
 nav {
   float: right;
@@ -96,6 +98,7 @@ nav a {
   font-size: 18px;
   font-family: Verdana, sans-serif;
   color: aliceblue;
+  user-select: none;
 }
 nav a:hover {
   color: rgb(90, 86, 23);
@@ -136,12 +139,57 @@ nav a:hover::before {
   margin-top: 50px;
   padding-left: 50px;
 }
+/* here begins new changes */
+
+
+header {
+  
+  justify-content: center;
+  align-items: center;
+
+}
+.WaveContent {
+  
+  position: relative;
+
+}
+.WaveContent h2 {
+  margin-left: 895px;
+  margin-top: 360px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  font-size: 10em;
+  user-select: none;
+  
+  
+}
+.WaveContent h2:nth-child(1) {
+  color: transparent;
+  -webkit-text-stroke: 2px rgb(122, 112, 82);
+}
+.WaveContent h2:nth-child(2) {
+  color:rgb(122, 112, 82) ;
+  animation: animate 4s ease-in-out infinite;
+}
+@keyframes animate 
+{
+  0%, 100%
+  { 
+    clip-path: polygon(0 48%, 11% 56%, 20% 62%, 29% 63%, 40% 62%, 50% 57%, 59% 54%, 70% 53%, 78% 59%, 86% 60%, 96% 56%, 100% 53%, 100% 100%, 0% 100%);
+  }
+  50%
+  { 
+    clip-path: polygon(0 64%, 8% 59%, 19% 53%, 29% 51%, 42% 54%, 52% 58%, 59% 61%, 72% 63%, 82% 59%, 89% 56%, 96% 51%, 100% 47%, 100% 100%, 0% 100%);
+  }
+}
+/* here end new changes */
 .slogan {
   font-family: Verdana, sans-serif;
   font-size: 45px;
   color: aliceblue;
   text-align: left;
   padding-left: 50px;
+  user-select: none;
 }
 .textobar {
   font-family: Verdana, sans-serif;
@@ -150,11 +198,65 @@ nav a:hover::before {
   text-align: justify;
   padding-left: 50px;
   padding-right: 50px;
+  user-select: none;
 }
 
 /* About begins here*/
+div section {
+  
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 
-div #container-about {
+ .Float {
+  background:rgb(30, 30, 30) ;
+  top: 0em;
+  left: 0em;
+}
+
+section {
+  margin-bottom: ;
+  position:relative;
+  width: 100%;
+  padding: 50px;
+}
+.circle {
+  position: relative;
+  overflow: hidden;
+}
+.circle.circle1 {
+  width: 500px;
+  height: 500px;
+  float: left;
+  border-radius: 50%;
+  margin: 20px;
+  shape-outside:circle();
+}
+.circle.circle2 {
+  width: 300px;
+  height: 300px;
+  float: right;
+  border-radius: 50%;
+  margin: 20px;
+  shape-outside:circle();
+}
+section h2 {
+  color: #fff;
+  font-size: 2em;
+  margin-bottom: 10px;
+
+
+
+}
+section p {
+  color: #fff;
+  
+}
+
+
+
+/* div #container-about {
   margin: 150px auto;
   padding-right: 150px;
   width: 50%;
@@ -180,13 +282,13 @@ body > div > .text {
   font-size: 28px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: aliceblue;
-}
-/*Cocktail Menu begins here*/
+  user-select: none;
+} */
+/* Cocktail MenuFlipEffects begins here */
 
 #cocktail-menu {
   background: rgb(30, 30, 30);
 }
-
 .container-menu {
   display: flex;
   justify-content: space-between;
@@ -194,7 +296,6 @@ body > div > .text {
   flex-wrap: wrap;
   flex-direction: row;
 }
-
 .container-menu > .cocktail {
   position: relative;
   max-width: 450px;
@@ -204,37 +305,37 @@ body > div > .text {
   display: flex;
   transition: 1s;
 }
-
 .container-menu > .cocktail > .imgCm {
+  font-weight: bold;
+  font-size: 150%;
+  display: flex;
   max-width: 150px;
   flex: 0 0 150px;
+  user-select: none;
 }
-
 .container-menu > .cocktail > .imgCm > img {
   max-width: 100%;
 }
-
 .container-menu > .cocktail > .content > h2 {
   margin-left: 20px;
   font-family: "Krona One", sans-serif;
   src: url(../Fonts/KronaOne-Regular.ttf);
   font-size: 28px;
   color: rgb(122, 112, 82);
-  text-align: center;
+  text-align:left;
 }
 .container-menu > .cocktail > .content > p {
   margin-left: 20px;
   text-align: center;
   font-family: Verdana, sans-serif;
-  color: aliceblue;
+  color: rgb(122, 112, 82);
 }
-
 .container-menu > img {
   display: block;
   width: 100%;
   border-radius: 5px;
 }
-.container-menu > .cocktail > .imgCm > img:hover {
+.container-menu > .cocktail > .imgCm > img/* :hover */ {
   transform: scale(1.15);
   z-index: 2;
 }
@@ -258,6 +359,56 @@ body > div > .text {
     margin-left: 20px;
   }
 }
+/* New changes start here */
+
+.cocktail {
+  background-color: transparent;
+  border: 6px solid rgb(122, 112, 82); 
+  width: 500px;
+  height: 350px;
+  margin: 100px auto;
+  perspective: 1000px;
+  border-radius: 10px;
+}
+ .cocktail .imgCm .FrontBack {
+  width: 100%;
+  height: 100%; 
+}
+.imgCm {
+  position:relative;
+  width: 40%;
+  height: 40%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  
+  
+}
+.cocktail:hover .imgCm {
+  transform: rotateY(180deg);
+  
+}
+.FrontBack, .content {
+  position:relative;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility:hidden; 
+  backface-visibility:hidden;
+}
+.content {
+  display: block;
+  background-color: rgb(5, 5, 5);
+  color: rgb(122, 112, 82);
+  position:relative;
+  width: 100%;
+  height: 100%;
+   
+}
+.FrontBack {
+  color: white;
+  transform: rotateY(180deg);
+  
+}
 /*Reserve a Table*/
 
 #reserve {
@@ -278,6 +429,7 @@ body > div > .text {
   background: rgb(0, 0, 0);
   box-shadow: 0px 0px 10px 0px rgb(122, 112, 82);
   box-sizing: border-box;
+  user-select: none;
 }
 .contact-map {
   width: 100%;
@@ -356,6 +508,7 @@ body > div > .text {
   font-size: 28px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: aliceblue;
+  user-select: none;
 }
 .container-imprint > img {
   width: 600px;
@@ -363,6 +516,7 @@ body > div > .text {
   padding-top: 20px;
   height: auto;
   vertical-align: center;
+  user-select: none;
 }
 
 /*Open-Close begins here*/
@@ -400,6 +554,7 @@ body > div > .text {
   background-color: rgba(255, 255, 255, 0);
   opacity: 0;
   animation: ani2 0.5s ease-out forwards;
+  user-select: none;
 }
 .wrapper-text-hours h2,
 .wrapper-text-hours h4 {
