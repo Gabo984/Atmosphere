@@ -9,9 +9,9 @@ body > header > div > .container {
   padding: 0%;
 }
 body > header#navbar {
- /*  background-color: black; */
- background-image: url(/img/FondoTapete.jpg);
- border-bottom:rgb(90, 86, 23) solid 5px;
+  /*  background-color: black; */
+  background-image: url(/img/FondoTapete.jpg);
+  border-bottom: rgb(90, 86, 23) solid 5px;
 }
 header::after {
   content: "";
@@ -22,11 +22,11 @@ header::after {
 /*icons social media*/
 
 .social-menu ul {
-  position:absolute;  
+  position: absolute;
   vertical-align: center;
   top: 95%;
   left: 45%;
-  right: 55%; 
+  right: 55%;
   text-align: center;
   padding: 0;
   margin: 0;
@@ -126,19 +126,17 @@ nav a:hover::before {
 /*Home begins here*/
 
 #projekt {
-  
   margin-bottom: 0;
   background-image: url("../img/BarLado.jpg");
-  background-position:();
+  background-position: ();
   /* background-size: auto; */
   /* padding-bottom: 40%; */
-  /*  border-bottom: 0; */  
-  background-size: cover;  
+  /*  border-bottom: 0; */
+  background-size: cover;
   background-repeat: no-repeat;
   padding: 0%;
 }
 .nombrebar {
-  
   font-family: "Krona One", sans-serif;
   src: url(../Fonts/KronaOne-Regular.ttf);
   font-size: 120px;
@@ -149,17 +147,12 @@ nav a:hover::before {
 }
 /* here begins new changes */
 
-
 header {
-  
   justify-content: center;
   align-items: center;
-
 }
 .WaveContent {
-  
   position: relative;
-
 }
 .WaveContent h2 {
   position: absolute;
@@ -168,30 +161,53 @@ header {
   transform: translate(-50%, -50%);
   font-size: 10em;
   user-select: none;
-  
-  
 }
 .WaveContent h2:nth-child(1) {
   color: transparent;
   -webkit-text-stroke: 2px rgb(221, 157, 60);
-  -webkit-box-reflect: below 1px linear-gradient(transparent,#006); 
- 
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #006);
 }
 .WaveContent h2:nth-child(2) {
-  color:rgb(122, 112, 82) ;
+  color: rgb(122, 112, 82);
   animation: animate 4s ease-in-out infinite;
-  
 }
-@keyframes animate 
-{
-  0%, 100%
-  { 
-    clip-path: polygon(0 48%, 11% 56%, 20% 62%, 29% 63%, 40% 62%, 50% 57%, 59% 54%, 70% 53%, 78% 59%, 86% 60%, 96% 56%, 100% 53%, 100% 100%, 0% 100%);
+@keyframes animate {
+  0%,
+  100% {
+    clip-path: polygon(
+      0 48%,
+      11% 56%,
+      20% 62%,
+      29% 63%,
+      40% 62%,
+      50% 57%,
+      59% 54%,
+      70% 53%,
+      78% 59%,
+      86% 60%,
+      96% 56%,
+      100% 53%,
+      100% 100%,
+      0% 100%
+    );
   }
-  50%
-  { 
-    clip-path: polygon(0 64%, 8% 59%, 19% 53%, 29% 51%, 42% 54%, 52% 58%, 59% 61%, 72% 63%, 82% 59%, 89% 56%, 96% 51%, 100% 47%, 100% 100%, 0% 100%);
-  
+  50% {
+    clip-path: polygon(
+      0 64%,
+      8% 59%,
+      19% 53%,
+      29% 51%,
+      42% 54%,
+      52% 58%,
+      59% 61%,
+      72% 63%,
+      82% 59%,
+      89% 56%,
+      96% 51%,
+      100% 47%,
+      100% 100%,
+      0% 100%
+    );
   }
 }
 /* here end new changes */
@@ -209,13 +225,12 @@ header {
 }
 .Transp:hover {
   opacity: 1;
-  
 }
 
 .textobar {
   font-family: "Kaushan";
   font-size: 40px;
-  color:rgb(214, 126, 10);
+  color: rgb(214, 126, 10);
   text-align: justify;
   padding-left: 50px;
   padding-right: 50px;
@@ -224,7 +239,6 @@ header {
 
 /* About begins here*/
 div section {
-  
   padding: 0;
   box-sizing: border-box;
   font-size: 200%;
@@ -233,18 +247,16 @@ div section {
   user-select: none;
 }
 
- .Float {
-  background:rgb(30, 30, 30) ;
+.Float {
+  background: rgb(30, 30, 30);
   top: 0em;
   left: 0em;
   padding-bottom: 40%;
   padding-top: 2%;
-
 }
 
 section {
-  
-  position:relative;
+  position: relative;
   width: 100%;
   padding: 50px;
 }
@@ -258,7 +270,7 @@ section {
   float: left;
   border-radius: 50%;
   margin: 20px;
-  shape-outside:circle(); 
+  shape-outside: circle();
 }
 .circle.circle2 {
   width: 300px;
@@ -266,7 +278,7 @@ section {
   float: right;
   border-radius: 50%;
   margin: 20px;
-  shape-outside:circle(); 
+  shape-outside: circle();
 }
 section h2 {
   color: #fff;
@@ -275,10 +287,7 @@ section h2 {
 }
 section p {
   color: #fff;
-  
 }
-
-
 
 /* div #container-about {
   margin: 150px auto;
@@ -344,16 +353,13 @@ body > div > .text {
   max-width: 100%;
 }
 
-
-
-
 .container-menu > .cocktail > .content > h2 {
   margin-left: 20px;
   font-family: "Kaushan";
-  /* src: url(../Fonts/KronaOne-Regular.ttf) */;
+  /* src: url(../Fonts/KronaOne-Regular.ttf) */
   font-size: 28px;
   color: rgb(122, 112, 82);
-  text-align:left;
+  text-align: left;
 }
 .container-menu > .cocktail > .content > p {
   margin-left: 20px;
@@ -394,61 +400,71 @@ body > div > .text {
 
 .cocktail {
   background-color: transparent;
-  border: 6px solid rgb(122, 112, 82); 
+  border: 6px solid rgb(122, 112, 82);
   width: 500px;
   height: 350px;
   margin: 100px auto;
   perspective: 800px;
   border-radius: 10px;
 }
- .cocktail .imgCm .FrontBack {
+.cocktail .imgCm .FrontBack {
   width: 100%;
-  height: 100%; 
+  height: 100%;
 }
 .imgCm {
-  position:relative;
+  position: relative;
   width: 40%;
   height: 40%;
   text-align: center;
   transition: transform 0.8s;
   transform-style: preserve-3d;
-  
-  
 }
 .cocktail:hover .imgCm {
   transform: rotateY(180deg);
-  
 }
-.FrontBack, .content {
-  position:relative;
+.FrontBack,
+.content {
+  position: relative;
   width: 100%;
   height: 100%;
-  -webkit-backface-visibility:hidden; 
-  backface-visibility:hidden;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 .content {
   display: block;
   background-color: rgb(5, 5, 5);
   color: rgb(122, 112, 82);
-  position:relative;
+  position: relative;
   width: 100%;
   height: 100%;
-   
 }
 .FrontBack {
   color: white;
   transform: rotateY(180deg);
-  
 }
 /*Reserve a Table*/
 
 #reserve {
   background-image: url(/img/Selva.jpg);
-
+}
+legend {
+    color: rgb(122, 112, 82);
+    filter: brightness(1.75);
+    font-size: 40px;
+    font-family: "Kaushan";
+    font-weight:bold;
+}
+form  {
+  position: relative;
+  left: 15em;
+  top: 0;
+}
+.persons::placeholder {
+  color: rgb(247, 241, 241);
 }
 .contact-in {
   position: absolute;
-  top: 20%;
+  top: 15%;
   right: 10%;
   left: 10%;
   width: 80%;
@@ -476,6 +492,7 @@ body > div > .text {
   height: 100%;
 }
 .contact-form {
+  position: relative;
   width: 100%;
   height: auto;
   flex: 50%;
@@ -485,16 +502,29 @@ body > div > .text {
 .contact-form h1 {
   margin-bottom: 10px;
 }
-.contact-form-txt {
+.persons {
   width: 95%;
-  height: 40px;
-  color: #000;
+  height: 5px;
+  color:white;
   border: 1px solid #8f8f8f;
   border-radius: 5px;
   background-color: rgb(165, 165, 165, 0.5);
   outline: none;
   margin-bottom: 20px;
   padding: 15px;
+
+}
+.contact-form-txt {
+  width: 95%;
+  height: 40px;
+  color:white;
+  border: 1px solid #8f8f8f;
+  border-radius: 5px;
+  background-color: rgb(165, 165, 165, 0.5);
+  outline: none;
+  margin-bottom: 20px;
+  padding: 15px;
+  
 }
 .contact-form-txt::placeholder {
   color: rgb(247, 241, 241);
@@ -503,7 +533,7 @@ body > div > .text {
 .contact-form-textarea {
   width: 95%;
   height: 130px;
-  color: rgb(0, 0, 0);
+  color: white;
   border: 1px solid #8f8f8f;
   border-radius: 5px;
   outline: none;
@@ -511,6 +541,7 @@ body > div > .text {
   margin-bottom: 20px;
   padding: 15px;
   font-family: "Kaushan";
+  font-size: 16px;
 }
 .contact-form-textarea::placeholder {
   color: rgb(247, 241, 241);
@@ -536,7 +567,6 @@ body > div > .text {
   background-color: rgb(30, 30, 30);
   background-image: url(/img/ToolsCherrys.jpg);
   background-size: cover;
-  
 }
 
 .text-imprint {
@@ -545,7 +575,7 @@ body > div > .text {
   bottom: 60%;
   padding-left: 40%;
   font-size: 30px;
-  font-family:"Kaushan" ;
+  font-family: "Kaushan";
   color: rgb(207, 184, 120);
   user-select: none;
 }

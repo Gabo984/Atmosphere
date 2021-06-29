@@ -36,13 +36,18 @@
                 width="100%" height="auto" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
         <div class="contact form">
-            <h1 style="color: rgb(122, 112, 82); font-family: Verdana, Geneva, Tahoma, sans-serif;">Contact Us</h1>
-            <form>
-                <input type="text" placeholder="Name" class="contact-form-txt">
-                <input type="text" placeholder="Email" class="contact-form-txt">
-                <textarea placeholder="Message" class="contact-form-textarea"></textarea>
-                <input type="submit" name="Submit" class="contact-form-btn">
+            <legend>Contact Us</legend>
+            <form action="https://formspree.io/f/xnqlprqz"
+            method="POST">
+                
+                <input type="text" value="Name" placeholder="Name" title="Enter your name" class="contact-form-txt">
+                <input type="number" value="visitors" placeholder="Guests" title="How many you'll be?" class="persons" >
+                <input type="date" value="date" title="When are you coming?" class="contact-form-txt">
+                <input type="text" value="Email" placeholder="Email" title="Enter your email" class="contact-form-txt">
+                <textarea placeholder="Message" title="Previous indications, allergies, birthdays etc.." class="contact-form-textarea"></textarea>
+                <input type="submit" name="Submit" title="Let's let show begin!!!" class="contact-form-btn">
             </form>
+        
         </div>
 
     </div>

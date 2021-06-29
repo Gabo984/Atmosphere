@@ -34,23 +34,25 @@
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d151676.67775740434!2d9.787740143248921!3d53.558694113710786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b161837e1813b9%3A0x4263df27bd63aa0!2sHamburg!5e0!3m2!1sde!2sde!4v1614703436932!5m2!1sde!2sde"
                 width="100%" height="auto" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </div>
-        <div class="contact form">
-            <h1 style="color: rgb(122, 112, 82); font-family: Verdana, Geneva, Tahoma, sans-serif;">Contact Us</h1>
-            <form>
-                <input type="text" placeholder="Name" class="contact-form-txt">
-                <input type="text" placeholder="Email" class="contact-form-txt">
-                <textarea placeholder="Message" class="contact-form-textarea"></textarea>
-                <input type="submit" name="Submit" class="contact-form-btn">
-            </form>
-        </div>
-
-    </div>
-
-
-
-
-
+            </div>
+            <div class="contact form">
+                    <legend>Contact Us</legend>
+                    <form action="https://formspree.io/f/xnqlprqz"
+                    method="POST">
+                        <label for="name">Name</label><br>
+                        <input type="text"  value="Name" autofocus placeholder="Name" title="Enter your name" class="contact-form-txt" required>
+                        <label for="Guests">Guest number</label><br>
+                        <input type="number" pattern="[0-9]{2}" value="visitors" autofocus placeholder="Guests" title="How many you'll be?" class="persons" required >
+                        <label for="date">When you'll come?</label><br>
+                        <input type="date" value="date" autofocus title="When are you coming?" class="contact-form-txt" required>
+                        <label for="Email">Email Address</label>
+                        <input type="text" value="Email" autofocus placeholder="Email" title="Enter your email" class="contact-form-txt" required>
+                        <label for="comments">Comments</label>
+                        <textarea autofocus placeholder="Message" style="height: 50px;" rows="2" cols="10" title="Previous indications, allergies, birthdays etc.." class="contact-form-textarea"></textarea>
+                        <input type="submit" name="Let's let show begin!!!" title="Let's let show begin!!!" class="contact-form-btn">
+                    </form>
+            </div>    
+           
     <div class="social-menu">
         <ul>
             <li> <a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a></li>
@@ -63,4 +65,5 @@
 </body>
 ​
 
-</html>
+</html> 
+
